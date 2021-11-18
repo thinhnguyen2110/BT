@@ -1,0 +1,25 @@
+<div id="product_list" class="container ">
+    <table>
+        <tr class="list_line_even">
+            <td>
+                <%= image_tag(product.image_url, :class => 'list_image') %>
+            </td>
+  
+            <td class="list_description">
+                <dl>
+                    <dt><h3><%= product.title %></h3></dt>
+                    <dd><h5>Mã:<%= product.sku %></h5></dd>
+                    <dd class="d-flex"><h4>Giá:</h4><h4 class="price"><%= product.price %>VND</h4></dd>
+                    <dd><h5>Số lượng:<%= product.quantity %></h5></dd>
+                </dl>
+            </td>
+  
+            <td class="list_ actions d-flex">
+              <%= link_to 'Edit', edit_product_path(product), class: "btn btn-warning btnedit"  %>
+              <%= link_to 'Delete', product, 
+                    data: { confirm: 'Are you sure?' },
+                    :method => :delete, class:"btn btn-danger" %>
+            </td>
+        </tr>
+    </table>
+</div> 
