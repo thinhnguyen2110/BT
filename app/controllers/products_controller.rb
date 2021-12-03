@@ -9,6 +9,10 @@ class ProductsController < ApplicationController
     else
       @products = Product.order(id: :asc).paginate(:page => params[:page], :per_page => 5)
     end
+
+    if session[:user_id]
+      @user = User.find(session[:user_id])
+    end
   end
   # GET /products/1 or /products/1.json
   def show
