@@ -38,34 +38,34 @@ Product.create( :sku => 'SP5',
 
 
 Product.create( :sku => 'SP6',
-:title => 'Nem lụi nướng mía',
-:price => 130000,
+:title => 'Trà sữa TASTY',
+:price => 48000,
 :quantity => 10,
-:image_url => 'https://img.tastykitchen.vn/crop/320x250/2021/11/02/nem-lui-434c.jpg' )
+:image_url => 'https://img.tastykitchen.vn/crop/580x360/2021/08/06/tra-sua-tasty-min-6cf3.jpg' )
 
 Product.create( :sku => 'SP7',
-:title => 'Mì spaghetti sốt kem nấm',
-:price => 150000,
+:title => 'Trà sữa lài hoa đậu biếc',
+:price => 48000,
 :quantity => '5',
-:image_url => 'https://img.tastykitchen.vn/crop/320x250/2021/11/02/my-y-kem-nam-2-b720.jpg' )
+:image_url => 'https://img.tastykitchen.vn/crop/580x360/2021/08/06/tra-sua-lai-dau-biec-web-min-5399.jpg' )
 
 Product.create( :sku => 'SP8',
-:title => 'Mì spaghetti sốt cà chua bacon',
-:price => 200000,
+:title => 'Hồng trà cam quế ',
+:price => 54000,
 :quantity => 2,
-:image_url => 'https://img.tastykitchen.vn/crop/320x250/2021/11/02/my-y-ca-chua-2-616f.jpg' )
+:image_url => 'https://img.tastykitchen.vn/crop/320x250/2021/08/06/hong-tra-cam-que-web-min-0a43.jpg' )
 
 Product.create( :sku => 'SP9',
-:title => 'Nem chua TASTY',
-:price => 180000,
+:title => 'Trà vải hoa hồng',
+:price => 54000,
 :quantity => 4,
-:image_url => 'https://img.tastykitchen.vn/crop/320x250/2021/11/02/my-y-bo-bam-2-59b9.jpg' )
+:image_url => 'https://img.tastykitchen.vn/crop/320x250/2021/08/06/tra-vai-hoa-hong-web-min-2692.jpg' )
 
 Product.create( :sku => 'SP10',
-:title => 'Nem lụi nướng mía',
-:price => 130000,
+:title => 'Original cold brew coffee',
+:price => 88000,
 :quantity => 10,
-:image_url => 'https://img.tastykitchen.vn/crop/320x250/2021/11/02/nem-chua-423b.jpg' )
+:image_url => 'https://img.tastykitchen.vn/crop/320x250/2021/09/27/coldbrew-cf-cfeb.jpg' )
 
 Product.create( :sku => 'SP11',
 :title => 'Nem lụi nướng mía',

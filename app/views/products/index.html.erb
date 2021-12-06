@@ -1,24 +1,59 @@
-<div id="product_list" class="container ">
-    <h1 class="text">Products</h1>
-</div> 
-<div class ="container">
-    <% if @products.count == 0 %>
-        <p class="fs-4 ms-4 mt-4">Opp!!! Cannot find any products</p>
-        
-    <% elsif @products.count == 1 %>
-        <% @products.each do |product| %>
-            <%= render 'product', product: product %>
-        <% end %>
-    <% else %>
-        <% @products.each do |product| %>
-            <%= render 'product', product: product %>
-        <% end %>
-        <div class="apple_pagination">
-            <%= will_paginate @products, :container => false %>
-        </div> 
+    <% if @user %>
+        Logged in as <%= @user.email %>
     <% end %>
-</div>
-<div class="container update">
-  <br />
-  <%= link_to 'New product', new_product_path, class:"btn btn-success" %>
-</div>
+    <div class="d-flex container">
+        <div class="area">
+            <ul id="myUL">
+                <li><span class="caret">Nem</span>
+                    <ul class="nested">
+                        <li>Nem nướng</li>
+                        <li>Nem chua</li>
+                    </ul>
+                </li>
+                <li><span class="caret">Mì</span>
+                    <ul class="nested">
+                        <li>Water</li>
+                        <li>Coffee</li>
+                        <li>Tea</span>
+                    </ul>
+                </li>
+                <li><span class="caret">Trà sửa</span>
+                    <ul class="nested">
+                        <li>Water</li>
+                        <li>Coffee</li>
+                        <li>Tea</span>
+                    </ul>
+                </li>
+            </ul>
+            <%= javascript_pack_tag 'hello'%>
+        </div>
+
+
+        <div>
+            <div id="product_list" class="container ">
+                <h1 class="text">Products</h1>
+            </div> 
+            <div class ="container">
+                <% if @products.count == 0 %>
+                    <p class="fs-4 ms-4 mt-4">Opp!!! Cannot find any products</p>
+                    
+                <% elsif @products.count == 1 %>
+                    <% @products.each do |product| %>
+                        <%= render 'product', product: product %>
+                    <% end %>
+                <% else %>
+                    <% @products.each do |product| %>
+                        <%= render 'product', product: product %>
+                    <% end %>
+                    <div class="apple_pagination">
+                        <%= will_paginate @products, :container => false %>
+                    </div> 
+                <% end %>
+            </div>
+            <div class="container update">
+            <br />
+            <%= link_to 'New product', new_product_path, class:"btn btn-success" %>
+            </div>
+        </div>
+    </div>
+
